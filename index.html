@@ -1,0 +1,39 @@
+
+<html>
+    <head>
+        <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+        <meta content="utf-8" http-equiv="encoding">
+        <title>
+            Gravity
+        </title>
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <div id = 'wrapper' style="display: block;">
+            <div id='container' style=" width:70%;">
+
+            </div>
+            <div id = 'controls' style="position: absolute; top:5%; left:70%;">
+                <h3>Controls</h3>
+                <span>Rockets</span> 
+                <br>
+                <input type="range" min=1 max=150 value = 50 id='totalRockets'>
+                <br><br><br>
+                <span>Black Hole Mass</span> 
+                <br>
+                <input type="range" min=10 max=1000 value = 200 id='blackHoleMass'>
+                <br><br><br>
+                <span>G (Gravity Constant)</span> 
+                <br>
+                <input type="range" min=1 max=30 value = 15 id='G'>
+                <br><br><br>
+                <span>Initial Velocity</span> 
+                <br>
+                <input type="range" min=1 max=30 value = 10 id='initialVelocity'>
+            </div>
+        </div>
+    </body>
+    <script src="jquery.js"></script>
+    <script src="d3.js"></script>
+    <script src='main.js'></script>
+</html>
